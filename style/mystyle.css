@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+body {
+  font-family: Verdana, sans-serif;
+
+  /* for removing scroll width */
+  overflow-x: hidden;
+}
+
+#first-text {
+  font-size: 10em;
+  color: rgba(255, 203, 105, 0.5);
+}
+/* ------------------------------navbar-------------------------------------------- */
+.my-nav-bar {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(226, 226, 226, 0.87);
+}
+.my-nav-bar h1 {
+  padding-left: 20px;
+  font-family: "Oswald", sans-serif;
+  color: gray;
+}
+.my-items-list {
+  display: inline-flex;
+}
+
+.dropdown,
+.home {
+  padding-right: 4.5em;
+}
+.home p,
+#dropdownMenuButton,
+.dropdown-item {
+  font-size: 1.5rem;
+}
+.home {
+  padding-top: 5px;
+}
+/* _______________________________________________________________________________________________ */
+#middle-title h2,
+#middle-title h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#middle-title {
+  margin-top: 10em;
+}
+/* _______________________________________________first set cards________________________________ */
+.col-sm {
+  margin-top: 5em;
+}
+.col-sm h4 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/* ___________________________second set cards_______________________________________________ */
+.second-set .col-3 {
+  margin-top: 8em;
+
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* even */
+.second-set .col-3:nth-of-type(2n) {
+  background-color: rgb(206, 206, 206);
+}
+
+/* odd */
+.second-set .col-3:nth-of-type(2n + 1) {
+  background-color: gray;
+}
+
+.number-bold {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.name-weight-font {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 100;
+}
+/* ______________________________________________________________________________ */
+.line {
+  position: relative;
+  top: -2em;
+  width: 3rem;
+  height: 2px;
+  background: #444444;
+  display: inline-block;
+  margin-left: 55.5rem;
+}
+
+/* optional hover classes used with anmiation */
+/* ------------------------------------------third-set-cards----------------------------------------- */
+.third-set-title-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.third-set-card-texts {
+  margin-bottom: 10em;
+  margin-top: 7em;
+  margin-left: 10em;
+  margin-right: 15em;
+}
+
+.container-of-svg-icon {
+  width: 200px;
+  border-radius: 100%;
+  height: 200px;
+  background-color: rgb(69, 70, 75);
+  margin-bottom: 20px;
+}
+.svg-in-third-set {
+  position: relative;
+  top: 50px;
+  right: 20px;
+  padding: 10px;
+  width: 250px;
+  height: 100px;
+  /* color of svg to white with help of these pages:
+      https: //stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element
+      https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(90%) sepia(91%) saturate(6087%) hue-rotate(188deg)
+    brightness(131%) contrast(100%);
+}
+.container-of-svg-icon .badge-secondary {
+  border-radius: 100%;
+  background-color: rgb(255, 196, 0);
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: -100px;
+  right: -150px;
+}
+
+.container-of-svg-icon .badge-secondary h2 {
+  color: rgb(0, 0, 0);
+  position: relative;
+  top: 10px;
+}
+
+.third-set-card-texts {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.third-set-card-texts .third-set-card a {
+  color: rgb(255, 205, 39);
+}
+.third-set-card-texts .arrow {
+  position: relative;
+  top: 7rem;
+  left: -1em;
+  color: rgba(226, 226, 226, 0.87);
+}
+/* __________________________________About me_____________________________________________- */
+.pl-5 {
+  padding-left: 5rem !important;
+}
+.pr-1 {
+  padding-right: 1rem;
+}
+#tick-after-subtext span {
+  color: rgb(255, 205, 39);
+}
+.about-me {
+  background-color: aliceblue;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+.about-me .fa {
+  background-color: black;
+}
+.about-me h1 {
+  font-size: 3em;
+}
+.about-me h2 {
+  line-height: 2em;
+}
+/* footer*/
+footer {
+  background-color: #222222;
+  height: 100px;
+}
+
+footer .col-md-3,
+footer h4 {
+  padding-top: 30px;
+}
+
+footer h4 {
+  color: rgb(221, 221, 221);
+}
+
+footer h4 a {
+  color: #e79d6c;
+}
+
+footer footer .menu li a {
+  color: #b1aca1;
+  text-decoration: none;
+}
+
+.fa-2x {
+  margin-top: 30px;
+  width: 40px;
+
+  border: 2px solid white;
+  border-radius: 100%;
+  color: white;
+}
+
+footer .menu li a:hover {
+  color: #7dabdb;
+}
+
+.fa.fa-facebook,
+.fa.fa-github,
+.fa.fa-linkedin,
+.fa.fa-google-plus,
+.fa.fa-tumblr {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 8px;
+}
+
+.fa.fa-facebook:hover,
+.fa.fa-github:hover,
+.fa.fa-linkedin:hover,
+.fa.fa-google-plus:hover,
+.fa.fa-tumblr:hover {
+  color: #6794c2;
+}
